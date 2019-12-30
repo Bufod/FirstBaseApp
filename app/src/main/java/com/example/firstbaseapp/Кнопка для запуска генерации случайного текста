@@ -1,0 +1,13 @@
+ View.OnClickListener btTextClick(){
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                RandomString rs = getRandomString();
+                tw.setText(rs.getText());
+                tw.setTextSize(rs.getSize());
+                tw.setMaxWidth(800);
+                btColorBack.setEnabled(true);
+                btText.setEnabled(false);
+            }
+        };
+    }

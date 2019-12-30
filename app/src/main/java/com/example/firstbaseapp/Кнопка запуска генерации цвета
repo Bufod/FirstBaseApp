@@ -1,0 +1,14 @@
+    View.OnClickListener btColorBackClick(){
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tw.setTextColor(getRandomColor());
+                constraintLayout.setBackgroundColor(getRandomColor());
+                clickCount++;
+                if (clickCount == 5){
+                    btText.setEnabled(true);
+                    clickCount = 0;
+                }
+            }
+        };
+    }

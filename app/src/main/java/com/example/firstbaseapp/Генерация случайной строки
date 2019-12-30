@@ -1,0 +1,4 @@
+ RandomString getRandomString(){
+        int n = (int) (Math.random()*randomStrings.length);
+        return randomStrings[n];
+    }
