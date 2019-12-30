@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FirstBaseApp</string>
+    <string name="startText">Измени текст!!!</string>
+</resources>
